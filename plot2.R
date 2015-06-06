@@ -25,14 +25,13 @@ hpc$DateTime <- strptime(paste(hpc$Date, hpc$Time), "%d/%m/%Y %H:%M:%S")
 ## 3. Making Plots (using the base plotting system) PNG 480 x 480 plot2.png
 #     File plot2.png will be stored into working directory
 
-png(filename = "plot2.png", width = 480, height = 480, units = "px")
-
 plot(hpc$DateTime, hpc$Global_active_power,
      type = "l",
      ylab = "Global Active Power (kilowatts)",
      xlab = ""
      )
 
+dev.copy(png, filename = "plot2.png", width = 480, height = 480, units = "px")
 dev.off()
 
 ## 4. Working directory Cleanup

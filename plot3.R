@@ -25,9 +25,6 @@ hpc$DateTime <- strptime(paste(hpc$Date, hpc$Time), "%d/%m/%Y %H:%M:%S")
 ## 3. Making Plots (using the base plotting system) PNG 480 x 480 plot3.png
 #     File plot3.png will be stored into working directory
 
-png(filename = "plot3.png", width = 480, height = 480, units = "px")
-
-
 plot(hpc$DateTime, hpc$Sub_metering_1,
      type = "l", col = "black",
      ylab = "Energy sub metering",
@@ -47,6 +44,7 @@ legend("topright", col = c("black", "red",  "blue"),
        lty = 1
 )
 
+dev.copy(png, filename = "plot3.png", width = 480, height = 480, units = "px")
 dev.off()
 
 ## 4. Working directory Cleanup

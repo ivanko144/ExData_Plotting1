@@ -25,8 +25,6 @@ hpc$DateTime <- strptime(paste(hpc$Date, hpc$Time), "%d/%m/%Y %H:%M:%S")
 ## 3. Making Plots (using the base plotting system) PNG 480 x 480 plot3.png
 #     File plot3.png will be stored into working directory
 
-png(filename = "plot4.png", width = 480, height = 480, units = "px")
-
 par(mfrow = c(2, 2))
 
 # Plot #1
@@ -70,7 +68,7 @@ plot(hpc$DateTime, hpc$Global_reactive_power,
      xlab = "datetime"
 )
 
-
+dev.copy(png, filename = "plot4.png", width = 480, height = 480, units = "px")
 dev.off()
 
 ## 4. Working directory Cleanup
