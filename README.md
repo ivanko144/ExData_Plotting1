@@ -89,8 +89,8 @@ GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
 
-The four plots that you will need to construct are shown below. 
-
+###The four plots that you will need to construct are shown below. 
+Constracted plots you can see below that 
 
 ### Plot 1
 
@@ -112,3 +112,29 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+
+## Resulting Plots
+
+The four plots constructed according to assignment. 
+
+
+### Plot 1
+
+
+![plot1](plot1.png) 
+
+
+### Plot 2
+
+![plot2](plot2.png) 
+
+
+### Plot 3
+
+![plot3](plot3.png) 
+
+
+### Plot 4
+
+![plot4](plot4.png) 
