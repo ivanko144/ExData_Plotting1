@@ -23,13 +23,14 @@ hpc <- read.table(interimfilename, header = TRUE, sep = ";", dec = ".",
 ## 3. Making Plots (using the base plotting system) PNG 480 x 480 plot1.png
 #     File plot1.png will be stored into working directory
 
+png(filename = "plot1.png", width = 480, height = 480, units = "px")
+
 hist(hpc$Global_active_power, freq = TRUE,  col = "red", border = NULL,
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
      axes = TRUE
      )
 
-dev.copy(png, filename = "plot1.png", width = 480, height = 480, units = "px")
 dev.off()
 
 ## 4. Working directory Cleanup
